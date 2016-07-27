@@ -1,0 +1,543 @@
+body{
+	min-width: 1280px;
+	cursor: default;
+}
+.mainPanel{
+	padding-left: 258px;
+	overflow: hidden;
+	background: #ededec;
+	min-height:1208px;
+	.mp-header{
+		height: 31px;
+		line-height:31px;
+		color:#bdbdbd;
+		font-size: 14px;
+		background: #fff;
+		ul{
+			margin-left: 30px;
+		}
+		li{
+			float: left;
+			margin-right: 10px;
+		}
+		li:last-child{
+			color: #388bc2;
+		}
+	}
+	.mp-container{
+		width: 891px;
+		margin: 0 auto;
+		.search-box{
+			height: 65px;
+			border: 1px solid #d0d2d6;
+			margin-top:21px;
+			padding-top: 16px;
+			font-size: 12px;
+			color: #bdbdbd;
+			background-color: #fff;
+		}
+		select{
+			color: #000;
+		}
+		.box-num{
+			float: left;
+			margin-left:30px;
+			span{
+				margin-right:12px;
+			}
+			select{
+				width: 66px;
+				height: 24px;
+				border: 1px solid #d0d2d6;
+			}
+		}
+		.box-name{
+			float: left;
+			width: 160px;
+			margin-left:37px;
+			position: relative;
+			span{
+				margin-right:12px;
+			}
+			select{
+				width: 118px;
+				height: 24px;
+				border: 1px solid #d0d2d6;
+				margin-bottom: 7px;
+			}
+			.change{
+				position: absolute;
+				right:-30px;
+				top:8px;
+				cursor: pointer;
+			}
+		}
+		.box-date{
+			width: 309px;
+			margin-left:58px;
+			float: left;
+			span{
+				margin-right:12px;
+			}
+			select{
+				height: 24px;
+				border: 1px solid #d0d2d6;
+				margin-bottom: 7px;
+				margin-right: 15px;
+			}
+			#data,#deal{
+				width: 118px;
+			}
+			#time,#person{
+				width: 66px;
+			}
+		}
+		.box-search{
+			margin-left: 30px;
+			width: 50px;
+			height: 25px;
+			background: #398bc2;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			margin-top: 15px;
+		}
+		.time-money{
+			height:66px;
+			margin-top: 11px;
+		}
+		.action{
+			width: 28px;
+			line-height: 64px;
+			font-size: 26px;
+			color: #bdbdbd;
+			background: #fff;
+			border: 1px solid #d0d2d6;
+			text-align: center;
+			float: left;
+			margin-right:5px;
+			cursor: pointer;
+		}
+		.move{
+			width: 58px;
+			height:37px;
+			border: 1px solid #d0d2d6;
+			background: #fff;
+			float: left;
+			margin-right: 5px;
+			padding: 15px 25px 12px 25px;
+			text-align: center;
+			position: relative;
+			cursor: pointer;
+			span{
+				font-size: 12px;
+			}
+			span:nth-child(2){
+				color: #bdbdbd;
+
+			}
+			span:nth-child(3){
+				font-size: 21px;
+				color: #d04b36;
+			}
+		}
+		.move-active{
+			position: absolute;
+			top: 0px;
+			left:0px;
+			height: 2px;
+			width: 108px;
+			background: #388bc2;
+		}
+		.history{
+			width: 128px;
+			height:64px;
+			border: 1px solid #d0d2d6;
+			background: #fff;
+			float: right;
+			cursor: pointer;
+			img{
+				margin-top:16px;
+				float: left;
+				margin-left: 20px;
+			}
+			span{
+				float: left;
+				font-size: 12px;
+				margin-top:23px;
+				margin-left: 11px;
+			}
+		}
+		.deal-num-title{
+			font-size: 14px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+		.deal-total:after{
+			clear: both;
+			content: '';
+			display: block;
+			visibility: hidden;
+		}
+		.dt-box{
+			width: 200px;
+			height: 70px;
+			border: 1px solid #d0d2d6;
+			float: left;
+			display: inline-block;
+			margin-right: 83/3px;
+			position: relative;
+			background: #fff;
+		}
+		.dt-bar{
+			position: absolute;
+			height: 72px;
+			width: 4px;
+			top:-1px;
+			left:-1px;
+		}
+		.dt-box:nth-child(1){
+			.dt-bar,.detail{
+				background-color: #43b29e;
+			}
+
+		}
+		.dt-box:nth-child(2){
+			.dt-bar,.detail{
+				background-color: #388bc2;
+			}
+		}
+		.dt-box:nth-child(3){
+			.dt-bar,.detail{
+				background-color: #d04b36;
+			}
+		}
+		.dt-box:nth-child(4){
+			margin-right: 0;
+			.dt-bar,.detail{
+				background-color: #e2cd46;
+			}
+		}
+		.deal-num{
+			font-size: 12px;
+			margin-top: 18px;
+			margin-left: 12px;
+		}
+		.deal-num-name{
+			font-size: 10px;
+			color: #b7b7b7;
+			margin-left:12px;
+			margin-top: 10px;
+		}
+		.detail{
+			width:60px;
+			height:46px;
+			position: absolute;
+			right: 15px;
+			top: 12px;
+		}
+		.progress-left{
+			float: left;
+			width: 532px;
+			height:355px;
+			border: 1px solid #d0d2d6;
+			border-radius: 7px;
+			margin-top: 15px;
+			overflow: hidden;
+			background: #fff;
+		}
+		.progress-title{
+			font-size: 12px;
+			color: #b7b7b7;
+			height: 40px;
+			line-height:40px;
+			padding-left: 20px;
+			background-color: #f4f5f6;
+			border-bottom: 1px solid #d0d2d6;
+		}
+		.progress-info{
+			width: 490px;
+			height: 280px;
+			border: 1px solid #d0d2d6;
+			border-radius: 5px;
+			margin: 12px auto 0;
+			border-top: none;
+		}
+		.progress-nav{
+			width: 490px;
+			height: 29px;
+			margin-left: -1px;
+			border-bottom: 1px solid #d0d2d6;
+			border-right: 2px solid #fff;
+			border-left: 1px solid #fff;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		.nav-box{
+			float: left;
+			width: 84px;
+			height: 29px;
+			background: #ededf0;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			margin-right:5px;
+			font-size: 12px;
+			text-align:center;
+			line-height:29px;
+			cursor: pointer;
+		}
+		.nav-box-active{
+			width: 82px;
+			height: 29px;
+			border: 1px solid #d0d2d6;
+			background: #fff;
+			border-bottom: 1px solid #fff;
+			margin-left: -1px;
+			z-index: 99;
+		}
+		.progress-table{
+			margin: auto;
+			margin-top: 29px;
+			td{
+				width: 100px;
+				height: 30px;
+				border: 1px solid #d0d2d6;
+				font-size: 12px;
+				text-align: center;
+				cursor: pointer;
+			}
+			td:hover{
+				background: #f4f6f7;
+			}
+		}
+		.progress-right{
+			float: right;
+			height: 355px;
+			width: 348px;
+			border: 1px solid #d0d2d6;
+			border-radius: 7px;
+			margin-top: 15px;
+			overflow: hidden;
+			background: #fff;
+			font-size: 12px;
+		}
+		.right-container{
+			padding: 16px 35px 0 ;
+			.title{
+				color: #c7c6c6;
+			}
+			.title-name{
+				margin: 2px 0 5px;
+			}
+			.input-info{
+				width: 50px;
+				border: none;
+				margin-top:5px;
+			}
+			textarea{
+				width: 240px;
+				height:80px;
+				margin-top: 3px;
+				border: none;
+				resize: none;
+				padding-left: 0;
+			}
+			.input-info-title{
+				width: 80px;
+				display: block;
+				border:none;
+				margin: 2px 0 5px;
+			}
+			.info{
+				float: left;
+				width: 81px;
+				height: 39px;
+				border-top: 1px solid #d0d2d6;
+				border-bottom: 1px solid #d0d2d6;
+				padding-left: 14px;
+				padding-top: 5px;
+				margin-bottom: 3px;
+			}
+			.info:nth-of-type(2){
+				width: 168px;
+				border-left: 1px solid #d0d2d6;
+			}
+			.more-info{
+				clear: both;
+				padding-left: 14px;
+				height: 132px;
+				border-bottom: 1px solid #d0d2d6;
+				margin-bottom: 11px;
+			}
+			.secret{
+				color: #c7c6c6;
+				margin-left: 11px;
+			}
+			.box-search-another{
+				margin:0;
+				float: right;
+				position: relative;
+				top: -6px;
+			}
+		}
+		.deal-date{
+			float: left;
+			width: 350px;
+			height:355px;
+			border: 1px solid #d0d2d6;
+			border-radius: 7px;
+			margin-top: 10px;
+			overflow: hidden;
+			font-size: 12px;
+			background: #fff;
+		}
+		.deal-rank{
+			float: right;
+			width: 529px;
+			height:355px;
+			border: 1px solid #d0d2d6;
+			border-radius: 7px;
+			margin-top: 10px;
+			overflow: hidden;
+		}
+		.date-container{
+			padding: 0 21px;
+		}
+		.date-select,.return{
+			width: 70px;
+			height: 19px;
+			border: 1px solid #d0d2d6;
+			margin-right: 6px;
+			margin-top:11px;
+		}
+		.return{
+			padding:0;
+			background: #fff;
+			margin-right:0;
+		}
+		.weekday{
+			margin-top: 11px;
+			border-top: 1px solid #a9cfec;
+			border-bottom: 1px solid #d0d2d6;
+			overflow: hidden;
+			li{
+				float: left;
+				width: 44px;
+				height: 30px;
+				text-align: center;
+				line-height:30px;
+			}
+		}
+		.day{
+			border-collapse:separate;
+			border-spacing: 1px 1px;
+			margin-top: 0px;
+			td{
+				width: 39px;
+				height: 39px;
+				padding: 2px 2px;
+				border: 1px solid #fff;
+				cursor: pointer;
+			}
+			.active{
+				border: 1px solid #f9dd80;
+			}
+			div{
+				text-align: center;
+			}
+			.red{
+				color: #cd3539;
+			}
+		}
+		.deal-rank{
+			background: #fff;
+			table{
+				margin: 16px auto 0;
+				font-size: 12px;
+			}
+			td{
+				border: 1px solid #d0d2d6;
+				text-align: center;
+			}
+			.rank{
+				width: 67px;
+				height:25px;
+			}
+			.sign{
+				width: 90px;
+				height:25px;
+			}
+			.hot{
+				width: 260px;
+				height:25px;
+				text-align: left;
+				padding-left: 30px;
+			}
+			.hot-num{
+				width: 167px;
+				height: 4px;
+				display: inline-block;
+				background: #dcdcdc;
+				position: relative;
+				top: -2px;
+				margin-left: 23px;
+			}
+			.hot-num-active,
+			.hot-num-active2,
+			.hot-num-active3,
+			.hot-num-active4,
+			.hot-num-active5,
+			.hot-num-active6,
+			.hot-num-active7,
+			.hot-num-active8,
+			.hot-num-active9,
+			.hot-num-active10{
+				width: 140px;
+				height:4px;
+				display: inline-block;
+				background: #ec6d51;
+				position: absolute;
+				left:0;
+			}
+			.hot-num-active2{
+				width:121px;
+				background: #ef8150;
+			}
+			.hot-num-active3{
+				width: 105px;
+				background: #f29f4f;
+			}
+			.hot-num-active4{
+				width: 95px;
+				background: #7fcbf0;
+			}
+			.hot-num-active5{
+				width: 85px;
+				background: #7fcbf0;
+			}
+			.hot-num-active6{
+				width: 75px;
+				background: #7fcbf0;
+			}
+			.hot-num-active7{
+				width: 65px;
+				background: #7fcbf0;
+			}
+			.hot-num-active8{
+				width: 55px;
+				background: #7fcbf0;
+			}
+			.hot-num-active9{
+				width: 45px;
+				background: #7fcbf0;
+			}
+			.hot-num-active10{
+				width: 35px;
+				background: #7fcbf0;
+			}
+
+		}
+	}
+
+}

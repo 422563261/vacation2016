@@ -1,0 +1,45 @@
+.header {
+  height: 60px;
+  background: #2189bf;
+  overflow: hidden;
+}
+.header .logo {
+  float: left;
+  margin-top: 12px;
+  margin-left: 50px;
+}
+.header ul {
+  margin-right: 96px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+.header ul li {
+  float: right;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+}
+.header a {
+  color: #fff;
+}
+.header .head-img {
+  margin-top: 6px;
+  margin-right: 4px;
+  margin-left: 20px;
+}
+.header .search-input {
+  width: 264px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 50px;
+  color: #000;
+}
+.header .search {
+  position: absolute;
+  left: 18px;
+  top: 6.5px;
+  cursor: pointer;
+}
